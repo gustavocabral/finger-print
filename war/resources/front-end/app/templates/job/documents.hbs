@@ -1,0 +1,27 @@
+{{!--table-component
+  hasFooter=false
+  enableContentSelection=true
+  columnsBinding="columns"
+  contentBinding="content"
+--}}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Size</th>
+            <th>Created At</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each document in model}}
+            <tr>
+                <td>{{document.id}}</td>
+                <td>{{document.name}}</td>
+                <td>{{document.size}}</td>
+                <td>{{document.createdAt}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

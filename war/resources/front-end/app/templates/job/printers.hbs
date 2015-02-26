@@ -1,0 +1,22 @@
+<form class="form-horizontal">
+    <h3>Favorite Printers</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Online</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each printer in model}}
+                <tr>
+                    <td>{{printer.id}}</td>
+                    <td>{{printer.name}}</td>
+                    <td>{{#if printer.online}}Online{{else}}Offline{{/if}}</td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    {{#link-to "job.job-details" }}<button type="button" class="btn btn-primary">Next</button>{{/link-to}}
+</form>
