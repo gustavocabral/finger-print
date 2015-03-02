@@ -6,11 +6,11 @@ import config from './config/environment';
 Ember.MODEL_FACTORY_INJECTIONS = true;
 
 var App = Ember.Application.extend({
-    modulePrefix: config.modulePrefix,
-    podModulePrefix: config.podModulePrefix,
-    Resolver: Resolver
+  modulePrefix: config.modulePrefix,
+  podModulePrefix: config.podModulePrefix,
+  Resolver: Resolver
 });
 
-loadInitializers(App, 'finger-print');
+loadInitializers(App, config.modulePrefix);
 
 export default App;
