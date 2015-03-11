@@ -3,6 +3,7 @@
     <table class="table table-striped">
         <thead>
             <tr>
+                <th></th>
                 <th>Id</th>
                 <th>Name</th>
                 <th>Online</th>
@@ -11,6 +12,7 @@
         <tbody>
             {{#each printer in model}}
                 <tr>
+                    <td>{{input type="checkbox"}}</td>
                     <td>{{printer.id}}</td>
                     <td>{{printer.name}}</td>
                     <td>{{#if printer.online}}Online{{else}}Offline{{/if}}</td>

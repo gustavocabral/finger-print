@@ -1,27 +1,26 @@
-{{!--table-component
-  hasFooter=false
-  enableContentSelection=true
-  columnsBinding="columns"
-  contentBinding="content"
---}}
+<h2>Select document</h2>
 
 <table class="table table-striped">
     <thead>
         <tr>
+            <th></th>
             <th>Id</th>
             <th>Name</th>
-            <th>Size</th>
-            <th>Created At</th>
+            <th>#Pages</th>
+            <th>Updated At</th>
         </tr>
     </thead>
     <tbody>
         {{#each document in model}}
             <tr>
+                <td>{{input type="checkbox"}}</td>
                 <td>{{document.id}}</td>
                 <td>{{document.name}}</td>
                 <td>{{document.size}}</td>
-                <td>{{document.createdAt}}</td>
+                <td>{{document.updatedAt}}</td>
             </tr>
         {{/each}}
     </tbody>
 </table>
+
+{{#link-to "job.printers" 1 }}<button type="button" class="btn btn-primary">Print</button>{{/link-to}}
