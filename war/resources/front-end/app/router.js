@@ -9,7 +9,6 @@ Router.map(function() {
     this.resource('job', {path: '/job/:id'}, function () {
         this.route('printers');
         this.route('job-details', {path: 'details'});
-        //this.route('documents');
         //this.route('payment');
         //this.route('conclusion');
     });
