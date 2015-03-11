@@ -5,7 +5,7 @@
     <ignored path="front-end.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/application.hbs" changelist="6afd1b22-92bf-4b5c-ac81-9d537ade1da0" time="1425307361306" ignored="false" />
-    <file path="$PROJECT_DIR$/dist/tests/index.html" changelist="6afd1b22-92bf-4b5c-ac81-9d537ade1da0" time="1425307901772" ignored="false" />
+    <file path="$PROJECT_DIR$/dist/tests/index.html" changelist="6afd1b22-92bf-4b5c-ac81-9d537ade1da0" time="1425308041701" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
