@@ -11,13 +11,13 @@
         </tr>
     </thead>
     <tbody>
-        {{#each document in model}}
+        {{#each doc in model}}
             <tr>
                 <td>{{input type="checkbox"}}</td>
-                <td>{{document.id}}</td>
-                <td>{{document.name}}</td>
-                <td>{{document.size}}</td>
-                <td>{{document.updatedAt}}</td>
+                <td>{{doc.id}}</td>
+                <td>{{doc.name}}</td>
+                <td>{{doc.size}}</td>
+                <td>{{doc.updatedAt}}</td>
             </tr>
         {{/each}}
     </tbody>

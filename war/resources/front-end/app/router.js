@@ -8,7 +8,7 @@ var Router = Ember.Router.extend({
 Router.map(function() {
     this.resource('job', {path: '/job/:id'}, function () {
         this.route('printers');
-        this.route('job-details', {path: 'details'});
+        this.route('details', {path: 'details'});
         //this.route('payment');
         //this.route('conclusion');
     });

@@ -1,0 +1,29 @@
+<form class="form-horizontal">
+    <h3 id='title'>Details</h2>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">From Page</label>
+        <div class="col-sm-10">
+            <p class="form-control-static">{{model.fromPage}}</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">To Page</label>
+        <div class="col-sm-10">
+            <p class="form-control-static">{{model.toPage}}</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Number of copies</label>
+        <div class="col-sm-10">
+            <p class="form-control-static">{{model.numberCopies}}</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Color</label>
+        <div class="col-sm-10">
+            <p class="form-control-static">{{model.color}}</p>
+        </div>
+    </div>
+    {{#link-to "job.printers" }}<button type="button" class="btn btn-primary">Back</button>{{/link-to}}
+    {{#link-to "job.index" }}<button type="button" class="btn btn-primary">Next</button>{{/link-to}}
+</form>
